@@ -1,0 +1,53 @@
+
+{
+  "budgets": [
+    {
+      "budget_id": "BUDGET_001",
+      "store_id": "STORE_001",
+      "campaign_id": "CAMP_001",
+      "period": {
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-31"
+      },
+      "total_budget": 100000,
+      "spent_amount": 25000,
+      "currency": "INR"
+    },
+    {
+      "budget_id": "BUDGET_002",
+      "store_id": "STORE_002",
+      "campaign_id": "CAMP_002",
+      "period": {
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-31"
+      },
+      "total_budget": 80000,
+      "spent_amount": 10000,
+      "currency": "INR"
+    },
+    {
+      "budget_id": "BUDGET_003",
+      "store_id": "STORE_003",
+      "campaign_id": "CAMP_003",
+      "period": {
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-31"
+      },
+      "total_budget": 120000,
+      "spent_amount": 40000,
+      "currency": "INR"
+    },
+    {
+      "budget_id": "BUDGET_004",
+      "store_id": "STORE_004",
+      "campaign_id": "CAMP_004",
+      "period": {
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-31"
+      },
+      "total_budget": 60000,
+      "spent_amount": 5000,
+      "currency": "INR"
+    }
+  ]
+}

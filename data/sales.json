@@ -1,0 +1,27 @@
+
+{
+  "sales": [
+    {
+      "sale_id": "SALE_001",
+      "lead_id": "LEAD_001",
+      "campaign_id": "CAMP_001",
+      "store_id": "STORE_001",
+      "vehicle_id": "VEH_001",
+      "vehicle_model": "Urban SUV",
+      "sale_amount": 1450000,
+      "sale_date": "2026-10-15",
+      "status": "completed"
+    },
+    {
+      "sale_id": "SALE_002",
+      "lead_id": "LEAD_003",
+      "campaign_id": null,
+      "store_id": "STORE_003",
+      "vehicle_id": "VEH_004",
+      "vehicle_model": "Family SUV",
+      "sale_amount": 1800000,
+      "sale_date": "2026-10-20",
+      "status": "completed"
+    }
+  ]
+}

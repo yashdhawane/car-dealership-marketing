@@ -1,0 +1,52 @@
+{
+  "schema_version": 1,
+  "diagram_type": "architecture",
+  "meta": {
+    "title": "Agentic Marketing Workflow — Car Dealership",
+    "output": ".archify/architecture-dealership-marketing-20261120-002546/dealership-marketing-architecture.html",
+    "quality_profile": "showcase",
+    "locale": "en"
+  },
+  "components": [
+    { "id": "user", "type": "external", "label": "Marketing manager", "sublabel": "free-text request", "pos": [30, 160], "size": [136, 72] },
+    { "id": "intake", "type": "backend", "label": "Request → Goal", "sublabel": "asks, then blocks", "pos": [240, 160], "size": [136, 72] },
+    { "id": "orch", "type": "backend", "label": "Orchestrator", "sublabel": "router · state · gates", "tag": "sole router", "pos": [450, 154], "size": [136, 84] },
+    { "id": "research", "type": "backend", "label": "Research", "sublabel": "dated observations", "pos": [660, 160], "size": [136, 72] },
+    { "id": "strategy", "type": "backend", "label": "Strategy", "sublabel": "audience · budget", "pos": [870, 160], "size": [136, 72] },
+    { "id": "g1", "type": "security", "label": "G1 approval", "sublabel": "strategy hash", "pos": [1080, 160], "size": [136, 72] },
+
+    { "id": "content", "type": "backend", "label": "Content", "sublabel": "specs, not renders", "pos": [1080, 360], "size": [136, 72] },
+    { "id": "g2", "type": "security", "label": "G2 approval", "sublabel": "per-asset hash", "pos": [870, 360], "size": [136, 72] },
+    { "id": "distribution", "type": "backend", "label": "Distribution", "sublabel": "api · assisted · manual", "pos": [660, 360], "size": [136, 72] },
+    { "id": "g3", "type": "security", "label": "G3 approval", "sublabel": "spend + publish", "pos": [450, 360], "size": [136, 72] },
+    { "id": "platforms", "type": "external", "label": "Platform accounts", "sublabel": "Meta · Google · CRM", "pos": [240, 360], "size": [136, 72] },
+    { "id": "analytics", "type": "backend", "label": "Analytics", "sublabel": "attribution · metrics", "pos": [30, 360], "size": [136, 72] },
+
+    { "id": "runstate", "type": "database", "label": "Run state", "sublabel": "log · hashes · registry", "pos": [450, 40], "size": [136, 64] },
+    { "id": "datasets", "type": "database", "label": "Reference data", "sublabel": "11 JSON datasets", "pos": [660, 40], "size": [136, 64] },
+    { "id": "learnings", "type": "database", "label": "Learnings", "sublabel": "next-cycle inputs", "pos": [30, 520], "size": [136, 64] }
+  ],
+  "connections": [
+    { "id": "request", "from": "user", "to": "intake", "label": "request", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "goal", "from": "intake", "to": "orch", "label": "goal", "variant": "emphasis", "fromSide": "right", "toSide": "left" },
+    { "id": "delegate", "from": "orch", "to": "research", "label": "task", "fromSide": "right", "toSide": "left" },
+    { "id": "findings", "from": "research", "to": "strategy", "label": "findings", "fromSide": "right", "toSide": "left" },
+    { "id": "plan", "from": "strategy", "to": "g1", "label": "plan", "fromSide": "right", "toSide": "left" },
+    { "id": "g1-content", "from": "g1", "to": "content", "label": "approved", "variant": "security", "fromSide": "bottom", "toSide": "top" },
+    { "id": "assets", "from": "content", "to": "g2", "label": "assets", "fromSide": "left", "toSide": "right" },
+    { "id": "cleared", "from": "g2", "to": "distribution", "label": "cleared", "fromSide": "left", "toSide": "right" },
+    { "id": "spend", "from": "distribution", "to": "g3", "label": "spend", "fromSide": "left", "toSide": "right" },
+    { "id": "publish", "from": "g3", "to": "platforms", "label": "publish", "variant": "security", "fromSide": "left", "toSide": "right" },
+    { "id": "delivery", "from": "platforms", "to": "analytics", "label": "delivery", "fromSide": "left", "toSide": "right" },
+    { "id": "learnings-back", "from": "analytics", "to": "orch", "label": "learnings", "variant": "dashed", "fromSide": "top", "toSide": "bottom", "via": [[98, 300], [518, 300]], "labelSegment": 1 },
+    { "id": "queries", "from": "research", "to": "datasets", "label": "queries", "fromSide": "top", "toSide": "bottom", "labelDx": 30 },
+    { "id": "writes-state", "from": "orch", "to": "runstate", "label": "writes", "fromSide": "top", "toSide": "bottom", "labelDx": 30 },
+    { "id": "writes-learnings", "from": "analytics", "to": "learnings", "label": "writes", "fromSide": "bottom", "toSide": "top", "labelAt": [104, 476] }
+  ],
+  "cards": [
+    { "dot": "cyan", "title": "Control plane", "items": ["The orchestrator routes every task and owns the run log", "Agents never call each other; each returns one signed artifact", "One writer per fact: findings, plan, copy, publish state, metrics"] },
+    { "dot": "emerald", "title": "Fact discipline", "items": ["An observation carries a source, a date and an evidence status", "An interpretation cites findings; no citation, no interpretation", "Absent data becomes a declared gap, never a confident sentence"] },
+    { "dot": "amber", "title": "Approval gates", "items": ["G1 strategy, G2 each asset, G3 spend — all approved by the requester", "Approval binds to an artifact hash; an edit returns one item only", "Paid campaigns are created paused, then activated separately"] },
+    { "dot": "rose", "title": "Honest boundaries", "items": ["Distribution declares api, assisted or manual per store and platform", "Content produces creative specs; a camera still needs a person", "Verified and correlated sales are reported as different numbers"] }
+  ]
+}

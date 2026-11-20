@@ -1,0 +1,36 @@
+
+{
+  "campaigns": [
+    {
+      "campaign_id": "CAMP_001",
+      "name": "Pune Urban SUV Promotion",
+      "start_date": "2026-10-01",
+      "end_date": "2026-10-31",
+      "status": "completed",
+      "channel_results": [
+        {
+          "channel": "google_ads",
+          "spend": 40000,
+          "impressions": 80000,
+          "clicks": 2400,
+          "leads": 120,
+          "qualified_leads": 45,
+          "test_drives_completed": 18,
+          "completed_sales": 6,
+          "revenue": 9000000
+        },
+        {
+          "channel": "meta_ads",
+          "spend": 20000,
+          "impressions": 60000,
+          "clicks": 1800,
+          "leads": 70,
+          "qualified_leads": 20,
+          "test_drives_completed": 8,
+          "completed_sales": 2,
+          "revenue": 3000000
+        }
+      ]
+    }
+  ]
+}

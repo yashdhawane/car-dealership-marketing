@@ -1,0 +1,37 @@
+
+{
+  "stores": [
+    {
+      "store_id": "STORE_001",
+      "name": "Shivaji Nagar Branch",
+      "city": "Pune",
+      "address": "Shivaji Nagar, Pune, Maharashtra",
+      "pincode": "411005",
+      "status": "active"
+    },
+    {
+      "store_id": "STORE_002",
+      "name": "Wakad Branch",
+      "city": "Pune",
+      "address": "Wakad, Pune, Maharashtra",
+      "pincode": "411057",
+      "status": "active"
+    },
+    {
+      "store_id": "STORE_003",
+      "name": "Andheri Branch",
+      "city": "Mumbai",
+      "address": "Andheri, Mumbai, Maharashtra",
+      "pincode": "400058",
+      "status": "active"
+    },
+    {
+      "store_id": "STORE_004",
+      "name": "Gangapur Road Branch",
+      "city": "Nashik",
+      "address": "Gangapur Road, Nashik, Maharashtra",
+      "pincode": "422013",
+      "status": "active"
+    }
+  ]
+}

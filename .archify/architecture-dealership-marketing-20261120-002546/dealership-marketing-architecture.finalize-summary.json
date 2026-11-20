@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 1,
+  "ok": true,
+  "command": "finalize",
+  "status": "pass",
+  "type": "architecture",
+  "quality": "showcase",
+  "specification": {
+    "path": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\candidate.json",
+    "sha256": "d9905522cc51811e6dc2cb82b2c1b9d524821141172bef0cdbd84bd416418478",
+    "bytes": 5573
+  },
+  "artifact": {
+    "path": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\dealership-marketing-architecture.html",
+    "sha256": "9e93980c656abcca919e94121013355405dad8dff631df6099324c8a68962551",
+    "bytes": 837584
+  },
+  "gates": {
+    "validate": "pass",
+    "deliver": "pass",
+    "check": "pass",
+    "browser-check": "pass"
+  },
+  "diagnostics": [],
+  "diagnosticSummary": {
+    "total": 0,
+    "shown": 0,
+    "truncated": false
+  },
+  "evidence": {
+    "receipt": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\dealership-marketing-architecture.finalize.json",
+    "summaryReceipt": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\dealership-marketing-architecture.finalize-summary.json",
+    "browserCheckReceipt": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\dealership-marketing-architecture.browser-check.json"
+  },
+  "update": {
+    "status": "current",
+    "installedVersion": "3.2.0",
+    "availableVersion": "3.2.0",
+    "releaseNotes": null,
+    "checkedAt": "2026-11-19T18:56:13.941Z",
+    "source": "cache",
+    "noticeRequired": false,
+    "noticeText": null
+  },
+  "visualReview": "not-requested",
+  "durationMs": 3452,
+  "browserCheck": {
+    "requested": true,
+    "ran": true
+  }
+}

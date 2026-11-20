@@ -1,0 +1,17 @@
+{
+  "schemaVersion": 1,
+  "receiptId": "9b4f69d0-0d24-42c3-9867-49d14d2bd6ef",
+  "status": "current",
+  "command": "deliver",
+  "type": "architecture",
+  "input": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\candidate.json",
+  "output": "D:\\AI-Application\\cardealership\\.archify\\architecture-dealership-marketing-20261120-002546\\dealership-marketing-architecture.html",
+  "specification": {
+    "sha256": "d9905522cc51811e6dc2cb82b2c1b9d524821141172bef0cdbd84bd416418478",
+    "bytes": 5573
+  },
+  "artifact": {
+    "sha256": "9e93980c656abcca919e94121013355405dad8dff631df6099324c8a68962551",
+    "bytes": 837584
+  }
+}

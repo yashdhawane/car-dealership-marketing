@@ -1,0 +1,25 @@
+
+{
+  "business_goals": [
+    {
+      "goal_id": "GOAL_001",
+      "goal": "Increase SUV sales in Pune during December",
+      "store_ids": ["STORE_001", "STORE_002"],
+      "vehicle_models": ["Urban SUV", "Family SUV"],
+      "target_period": {
+        "start_date": "2026-12-01",
+        "end_date": "2026-12-31"
+      },
+      "target_revenue": 500000,
+      "target_units": 3,
+      "priority": "high",
+      "budget_limit": 100000,
+      "success_metrics": [
+        "completed_sales",
+        "revenue",
+        "cost_per_sale"
+      ],
+      "status": "pending_confirmation"
+    }
+  ]
+}

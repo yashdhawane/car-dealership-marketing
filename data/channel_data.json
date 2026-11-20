@@ -1,0 +1,50 @@
+
+{
+  "channel_data": [
+    {
+      "record_id": "CH_001",
+      "campaign_id": "CAMP_001",
+      "store_id": "STORE_001",
+      "channel": "google_ads",
+      "date": "2026-10-01",
+      "spend": 2000,
+      "impressions": 8000,
+      "clicks": 240,
+      "leads": 12,
+      "qualified_leads": 4,
+      "test_drives_booked": 2,
+      "completed_sales": 1,
+      "revenue": 1450000
+    },
+    {
+      "record_id": "CH_002",
+      "campaign_id": "CAMP_001",
+      "store_id": "STORE_001",
+      "channel": "meta_ads",
+      "date": "2026-10-01",
+      "spend": 1500,
+      "impressions": 10000,
+      "clicks": 300,
+      "leads": 15,
+      "qualified_leads": 3,
+      "test_drives_booked": 1,
+      "completed_sales": 0,
+      "revenue": 0
+    },
+    {
+      "record_id": "CH_003",
+      "campaign_id": null,
+      "store_id": "STORE_002",
+      "channel": "website",
+      "date": "2026-10-01",
+      "spend": 0,
+      "visitors": 450,
+      "clicks": 0,
+      "leads": 5,
+      "qualified_leads": 2,
+      "test_drives_booked": 1,
+      "completed_sales": 0,
+      "revenue": 0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+
+{
+  "offers": [
+    {
+      "offer_id": "OFFER_001",
+      "name": "Urban SUV Festive Offer",
+      "store_ids": ["STORE_001", "STORE_002"],
+      "vehicle_model": "Urban SUV",
+      "discount_amount": 30000,
+      "terms": "Applicable to eligible Urban SUV variants only",
+      "valid_from": "2026-11-01",
+      "valid_until": "2026-12-31",
+      "status": "active"
+    },
+    {
+      "offer_id": "OFFER_002",
+      "name": "Family SUV Exchange Bonus",
+      "store_ids": ["STORE_003"],
+      "vehicle_model": "Family SUV",
+      "discount_amount": 50000,
+      "terms": "Exchange eligibility and vehicle inspection required",
+      "valid_from": "2026-11-15",
+      "valid_until": "2026-11-30",
+      "status": "active"
+    },
+    {
+      "offer_id": "OFFER_003",
+      "name": "Urban SUV Nashik Special",
+      "store_ids": ["STORE_004"],
+      "vehicle_model": "Urban SUV",
+      "discount_amount": 20000,
+      "terms": "Applicable to eligible stock at Nashik branch",
+      "valid_from": "2026-11-01",
+      "valid_until": "2026-11-25",
+      "status": "expired"
+    }
+  ]
+}

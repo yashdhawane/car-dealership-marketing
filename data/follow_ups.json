@@ -1,0 +1,25 @@
+
+{
+  "follow_ups": [
+    {
+      "follow_up_id": "FOLLOWUP_001",
+      "lead_id": "LEAD_001",
+      "date": "2026-11-19",
+      "channel": "phone",
+      "action": "initial_contact",
+      "outcome": "test_drive_booked",
+      "next_follow_up_date": "2026-11-21",
+      "notes": "Customer booked a test drive"
+    },
+    {
+      "follow_up_id": "FOLLOWUP_002",
+      "lead_id": "LEAD_002",
+      "date": "2026-11-19",
+      "channel": "whatsapp",
+      "action": "offer_shared",
+      "outcome": "awaiting_response",
+      "next_follow_up_date": "2026-11-20",
+      "notes": "Shared available Urban SUV offer"
+    }
+  ]
+}

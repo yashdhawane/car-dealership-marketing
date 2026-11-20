@@ -1,0 +1,60 @@
+
+{
+  "vehicles": [
+    {
+      "vehicle_id": "VEH_001",
+      "store_id": "STORE_001",
+      "make": "Example Motors",
+      "model": "Urban SUV",
+      "variant": "ZX Petrol",
+      "price": 1450000,
+      "stock_quantity": 4,
+      "days_in_stock": 75,
+      "status": "available"
+    },
+    {
+      "vehicle_id": "VEH_002",
+      "store_id": "STORE_001",
+      "make": "Example Motors",
+      "model": "Family SUV",
+      "variant": "VX Diesel",
+      "price": 1850000,
+      "stock_quantity": 2,
+      "days_in_stock": 25,
+      "status": "available"
+    },
+    {
+      "vehicle_id": "VEH_003",
+      "store_id": "STORE_002",
+      "make": "Example Motors",
+      "model": "Urban SUV",
+      "variant": "ZX Petrol",
+      "price": 1450000,
+      "stock_quantity": 6,
+      "days_in_stock": 110,
+      "status": "available"
+    },
+    {
+      "vehicle_id": "VEH_004",
+      "store_id": "STORE_003",
+      "make": "Example Motors",
+      "model": "Family SUV",
+      "variant": "VX Diesel",
+      "price": 1850000,
+      "stock_quantity": 3,
+      "days_in_stock": 40,
+      "status": "available"
+    },
+    {
+      "vehicle_id": "VEH_005",
+      "store_id": "STORE_004",
+      "make": "Example Motors",
+      "model": "Urban SUV",
+      "variant": "ZX Petrol",
+      "price": 1450000,
+      "stock_quantity": 8,
+      "days_in_stock": 120,
+      "status": "available"
+    }
+  ]
+}

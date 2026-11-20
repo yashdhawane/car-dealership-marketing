@@ -1,0 +1,65 @@
+
+{
+  "leads": [
+    {
+      "lead_id": "LEAD_001",
+      "name": "Customer A",
+      "city": "Pune",
+      "store_id": "STORE_001",
+      "interested_model": "Urban SUV",
+      "budget": 1500000,
+      "source": "google_ads",
+      "campaign_id": "CAMP_001",
+      "status": "test_drive_booked",
+      "consent_to_contact": true
+    },
+    {
+      "lead_id": "LEAD_002",
+      "name": "Customer B",
+      "city": "Pune",
+      "store_id": "STORE_002",
+      "interested_model": "Urban SUV",
+      "budget": 1400000,
+      "source": "website",
+      "campaign_id": null,
+      "status": "new",
+      "consent_to_contact": true
+    },
+    {
+      "lead_id": "LEAD_003",
+      "name": "Customer C",
+      "city": "Mumbai",
+      "store_id": "STORE_003",
+      "interested_model": "Family SUV",
+      "budget": 1900000,
+      "source": "referral",
+      "campaign_id": null,
+      "status": "qualified",
+      "consent_to_contact": true
+    },
+    {
+      "lead_id": "LEAD_004",
+      "name": "Customer D",
+      "city": "Nashik",
+      "store_id": "STORE_004",
+      "interested_model": "Urban SUV",
+      "budget": 1300000,
+      "source": "walk_in",
+      "campaign_id": null,
+      "status": "new",
+      "consent_to_contact": true
+    }
+  ],
+
+  "allowed_lead_statuses": [
+    "new",
+    "contacted",
+    "qualified",
+    "test_drive_booked",
+    "test_drive_completed",
+    "negotiation",
+    "sold",
+    "lost"
+  ]
+
+}

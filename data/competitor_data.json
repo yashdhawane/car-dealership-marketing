@@ -1,0 +1,23 @@
+
+{
+  "competitor_campaigns": [
+    {
+      "competitor_name": "City Motors",
+      "city": "Pune",
+      "channel": {
+        "meta_ads":{
+            "campaign_theme": "Festive SUV offer",
+            "vehicle_model": "Urban SUV",
+            "message": "Explore our festive offers",
+            "offer": "will be number",
+            "price":"will be number",
+            "ad_url": "https://example.com/ad",
+            "observed_date": "2026-11-19"
+        }
+    }
+}
+  ]
+}
+
+
+      
